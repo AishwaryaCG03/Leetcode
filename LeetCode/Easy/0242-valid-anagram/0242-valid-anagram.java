@@ -4,16 +4,16 @@ class Solution {
         {
             return false;
         }
-        char[] array=t.toCharArray();
+        char[] arr=t.toCharArray();
         for(int i=0;i<s.length();i++)
         {
             boolean found=false;
             char ch=s.charAt(i);
-            for(int j=0;j<array.length;j++)
+            for(int j=0;j<t.length();j++)
             {
-                if(ch==array[j])
+                if(ch==arr[j])
                 {
-                    array[j]='*';
+                    arr[j]='*';
                     found=true;
                     break;
                 }
@@ -23,7 +23,7 @@ class Solution {
                 return false;
             }
         }
-        
         return true;
+        
     }
 }
